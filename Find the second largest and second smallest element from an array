@@ -1,0 +1,17 @@
+# Input : [1,2,4,7,7,5]
+# output:
+# Second samllest = 2
+# Second Largest = 5
+
+nums = [1,2,4,7,7,5]
+nums1 =  set(nums)
+nums2 = list(nums1)
+# nums_sort = nums2.sort()
+print(nums2)
+print("Second Smallest: ",nums2[1])
+print("Second Largest: ", nums2[-2])
+
+#Output
+[1, 2, 4, 5, 7]
+Second Smallest:  2
+Second Largest:  5
