@@ -1,0 +1,16 @@
+# Input = arr[1,1,2,2,2,3,3]
+# Output = arr[1,2,3,,,,]
+
+nums = [1,1,2,2,2,3,3]
+nums_set = set(nums)
+nums_list = list(nums_set)
+print(nums_list)
+
+# for i in range(len(nums_list)):
+
+res = nums_list + [","] * (len(nums) - len(nums_list))
+print(res)
+
+#Output
+[1, 2, 3]
+[1, 2, 3, ',', ',', ',', ',']
