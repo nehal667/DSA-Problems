@@ -1,0 +1,21 @@
+arr = []
+size = int(input("Enter size of array:"))
+
+for i in range(size):
+    element = int(input("Enter element:"))
+    arr.append(element)
+
+print("Original array:", arr)
+
+# This is method by sorting
+## arr.sort()
+## print("Minimum element:", arr[0])
+
+
+minimum = arr[0]
+for i in range(len(arr)):
+    if arr[i] < minimum:
+        minimum = arr[i]
+    
+print(minimum)
+print("Minimum element:", minimum)
